@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  background-image: url(./asset/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all {
+  width: 60%;
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 10px 11px rgba(0, 0, 0, 0.5);
+}
+.subtit {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  top: 4rem;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.current {
+  width: 150px;
+  height: 80px;
+  background: rgb(20, 20, 20);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px 0;
+  font-weight: 600;
+}
+
+.score {
+  font-size: 40px;
+  color: white;
+}
+
+.total {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.crnt {
+  color: rgb(255, 204, 138);
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.middle {
+  position: absolute;
+  width: 120px;
+  height: 70vh;
+  left: 45.5%;
+}
+
+.middle img {
+  width: 80%;
+  position: absolute;
+  top: 34%;
+  left: 10%;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  background: rgb(255, 231, 199);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.new {
+  position: absolute;
+  top: 10%;
+}
+
+.hold {
+  position: absolute;
+  bottom: 8%;
+}
+
+.roll {
+  position: absolute;
+  bottom: 22%;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.winner {
+  color: white;
+  font-size: 50px;
+  animation: win 0.5s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes win {
+  100% {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.bgcng {
+  width: 50%;
+  height: 100%;
+  background: rgba(3, 226, 255, 0.459);
+}
+
+.target {
+  position: absolute;
+  color: rgb(255, 231, 199);
+  top: 20px;
+  left: 41%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.target span {
+  color: rgb(219, 203, 54);
+  font-weight: bold;
+}
+
+.shykat {
+  position: absolute;
+  bottom: 20px;
+  left: 45.5%;
+  font-size: 8px;
+  letter-spacing: 4px;
+  color: rgb(151, 151, 151);
+}
+
+.shykat span {
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .main {
+    position: relative;
+  }
+  .target {
+    position: absolute;
+    font-size: 13px;
+    left: 70px;
+    z-index: 1;
+  }
+  .all {
+    position: absolute;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    overflow: visible;
+  }
+  .left,
+  .right {
+    width: 100%;
+    height: 50%;
+  }
+  .btn {
+    font-size: 15px;
+    width: 110px;
+    height: 35px;
+  }
+  .new {
+    position: absolute;
+    top: -60px;
+    left: -40px;
+  }
+  .hold {
+    position: absolute;
+    bottom: -60px;
+    right: -40px;
+  }
+  .roll {
+    position: absolute;
+    bottom: -60px;
+    left: -135px;
+  }
+  .shykat {
+    position: absolute;
+    left: 130px;
+  }
+  .player_0,
+  .player_1 {
+    position: absolute;
+    transform: rotate(270deg);
+    left: -40px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+  }
+  .dice {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 90px;
+  }
+  .winner {
+    font-size: 25px;
+  }
+}

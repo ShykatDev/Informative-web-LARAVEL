@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.nav-bar {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 8px 11px rgba(0, 0, 0, 0.3);
+}
+.nav-bar .logo a img {
+  width: 25%;
+}
+
+.nav-bar .menu {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 250px;
+  margin-top: 10px;
+}
+.nav-bar .menu ul li {
+  list-style: none;
+}
+.nav-bar .menu ul li a {
+  padding: 10px 20px;
+  color: #14213d;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-bar .menu ul .lm a {
+  color: black;
+  margin-right: 70px;
+}
+.nav-bar .menu ul .ml a:hover {
+  border-bottom: 1px solid;
+  transition: 0.3s;
+}
+.nav-bar .menu ul .sep {
+  border: 1px solid black;
+  margin: 0 20px;
+  padding: 5px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.nav-bar .menu ul .log:hover {
+  background: #fca311;
+}
+.nav-bar .menu ul .log {
+  box-shadow: 3px 6px 11px rgba(0, 0, 0, 0.2);
+}
+.nav-bar .menu ul .reg {
+  background: #fca311;
+  box-shadow: 3px 6px 11px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+}
+
+.main .nav-bar {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 8px 11px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.nav-item {
+  color: #14213d;
+}
+.nav-item:hover {
+  color: #fca311;
+}
+.main .banner {
+  width: 90%;
+  height: 55vh;
+  background: #14213d;
+  position: relative;
+  margin-top: 15vh;
+}
+.main .banner h2 {
+  position: absolute;
+  right: -200px;
+  bottom: 50px;
+  transform: rotate(90deg);
+  font-size: 6em;
+  color: grey;
+  opacity: 0.3;
+  font-weight: bold;
+}
+.main .banner .first {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  top: 50px;
+  left: 100px;
+}
+.main .banner .first h1 {
+  font-size: 55px;
+  font-weight: bold;
+  color: white;
+}
+.first .io {
+  width: 100px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 140px;
+}
+.first .io .b1 {
+  width: 10px;
+  height: 10px;
+  background: white;
+}
+.first .io .b2 {
+  width: 10px;
+  height: 10px;
+  background: #fca311;
+}
+.main .banner .first p {
+  font-style: italic;
+  color: #fca311;
+  padding: 10px 0px 30px;
+}
+.main .banner .big-rule {
+  position: relative;
+  width: 900px;
+  height: 300px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .banner .big-rule .box {
+  position: relative;
+  width: 96%;
+  height: 80%;
+  border: 1px solid #14213d;
+  margin-top: -20px;
+}
+
+.main .banner .big-rule .box h3 {
+  color: #fca311;
+  margin-left: 30px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.main .banner .big-rule .box i {
+  font-size: large;
+  color: #fca311;
+  margin-left: 30px;
+}
+.main .banner .big-rule .box .list {
+  position: absolute;
+  bottom: 10px;
+  line-height: 30px;
+}
+
+/*----------------------------SecondSec--------------------------*/
+
+#all-rule {
+  width: 100%;
+  height: 360vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+#all-rule .sec2 {
+  width: 70%;
+  height: 90vh;
+  position: relative;
+  margin: auto;
+}
+#all-rule .sec2 .up {
+  width: 100%;
+  text-align: end;
+  height: 40%;
+}
+#all-rule .sec2 .up h2 {
+  color: #fca311;
+  margin-right: 48px;
+}
+#all-rule .sec2 .up .quote {
+  color: #fca311;
+  margin-right: 50px;
+}
+#all-rule .sec2 .up .list {
+  line-height: 25px;
+  margin-right: 40px;
+}
+#all-rule .sec2 .up .list li i {
+  margin: 0 10px;
+}
+#all-rule .sec2 .down {
+  width: 100%;
+  text-align: left;
+  height: 40%;
+}
+#all-rule .sec2 .down h2 {
+  color: #fca311;
+  margin-left: 48px;
+}
+#all-rule .sec2 .down .quote {
+  color: #fca311;
+  margin-left: 50px;
+}
+#all-rule .sec2 .down .list {
+  line-height: 25px;
+}
+#all-rule .sec2 .down .list li i {
+  margin: 0 10px;
+}
+
+/*--------------------------------------------End of RulesPage-------------------------------------*/
+
+.last-banner {
+  width: 100%;
+  height: 35vh;
+  background: #12203c;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.last-banner .triangle1 {
+  position: absolute;
+  background: black;
+  clip-path: polygon(100% 0%, 75% 35%, 100% 35%);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  opacity: 0.5;
+}
+.last-banner .triangle2 {
+  position: absolute;
+  background: #fca311;
+  clip-path: polygon(100% 15%, 75% 35%, 100% 35%);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+}
+.last-banner .triangle3 {
+  position: absolute;
+  background: black;
+  clip-path: polygon(25% 0%, 0% 0%, 0% 35%);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  opacity: 0.5;
+}
+.last-banner .triangle4 {
+  position: absolute;
+  background: #fca311;
+  clip-path: polygon(25% 0%, 0% 0%, 0% 20%);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+}
+.last-banner .texts h2 {
+  color: white;
+  z-index: 15;
+  font-size: 25px;
+  position: absolute;
+  font-weight: bold;
+  top: 34%;
+  left: 22%;
+}
+.last-banner .texts p {
+  color: white;
+  position: absolute;
+  top: 55%;
+  font-size: 12px;
+  left: 35%;
+}
+.copyright {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.copyright p {
+  margin: 0;
+  color: rgb(112, 112, 112);
+}

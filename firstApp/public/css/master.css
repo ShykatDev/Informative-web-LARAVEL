@@ -1,0 +1,1387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Six+Caps&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.preLoader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff url(/asset/loader.gif) no-repeat center center;
+    background-size: 20%;
+    z-index: 100;
+}
+
+/*Header part-----------------------------------Start---------------------------- Section*/
+
+header {
+    width: 100%;
+    height: 20vh;
+}
+
+header nav {
+    width: 60%;
+    height: 10vh;
+    margin: 0 auto;
+    position: relative;
+    /* background: rgb(255, 255, 255); */
+    background: transparent;
+    z-index: 1;
+}
+
+.lang-btn {
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    transform: translate(10%, -50%);
+}
+
+.lang-btn select {
+    width: 100px;
+    height: 30px;
+    border: none;
+    padding: 0 3px;
+    outline: none;
+    color: #363636;
+}
+.lang-btn select option {
+    background: rgb(255, 255, 255);
+    outline: none;
+}
+
+header nav .loginBtn {
+    position: absolute;
+    right: 0rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header nav .loginBtn .logBtn {
+    width: 40px;
+    height: 40px;
+    background: #ff6600;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+header nav .loginBtn .regBtn {
+    width: 90px;
+    height: 35px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    transition: 0.3s;
+    background: rgb(255, 255, 255);
+    margin: 0 8px;
+}
+
+header nav .loginBtn .logBtn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .loginBtn .logBtn a img {
+    width: 45%;
+}
+
+header nav .loginBtn .logBtn a,
+header nav .loginBtn .regBtn a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+    line-height: 35px;
+    text-align: center;
+}
+
+header nav .loginBtn .logBtn a {
+    color: rgb(255, 255, 255);
+}
+header nav .loginBtn .regBtn a {
+    color: #ff6600;
+}
+
+header nav .loginBtn .logBtn:hover {
+    background: #ffffff;
+    border: 1px solid #ff6600;
+}
+
+header nav .loginBtn .logBtn:hover a {
+    color: #000;
+}
+
+header nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+header nav ul li {
+    list-style: none;
+    border: 1px solid transparent;
+    width: 130px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul .l2 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+header nav ul .l3 {
+    border-right: 1px solid black;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(148, 148, 148);
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: rgb(36, 36, 36);
+    font-size: 18px;
+}
+
+.logo {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.logo .log {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: rgb(49, 49, 49);
+    overflow: hidden;
+}
+
+.logo .bb {
+    width: 130px;
+    height: 1px;
+    background: rgb(26, 26, 26);
+}
+
+.logo .log span {
+    color: #f77d2c;
+    font-size: 25px;
+}
+
+/*Header part----------------------------End-------------------------------------Section*/
+
+/*Footer part----------------------------Start---------------------------------- Section */
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background: rgb(48, 48, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .container .left,
+footer .container .middle,
+footer .container .right {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .container .left .nam {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    border: 1px solid #ff6600;
+    border-radius: 4px;
+    padding: 3px 7px;
+    width: 110px;
+    margin: 2px auto;
+    text-align: center;
+}
+
+footer .container .left .nam .d {
+    color: #ff6600;
+}
+
+footer .container .left .pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 17px 0;
+}
+
+footer .container .left .pages a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    font-size: 12px;
+}
+
+footer .container .left .pages a:hover {
+    color: #8b8b8b;
+}
+
+footer .container .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .container .middle p {
+    font-size: 14px;
+    color: rgb(189, 189, 189);
+}
+
+footer .container .middle input {
+    width: 190px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 10px 0;
+    color: #000000;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+footer .container .middle input:focus {
+    border-bottom: 2px solid #f77d2c;
+}
+
+footer .container .middle .subs {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #ff6600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 10px;
+    margin-top: 3px;
+    margin-left: 55px;
+    color: white;
+}
+
+/* footer .container .middle .subs a {
+    text-decoration: none;
+    color: white;
+} */
+
+footer .container .middle .subs:hover {
+    background: #ff6600;
+    box-shadow: 3px 5px 11px rgb(22, 22, 22);
+}
+
+footer .right .loc,
+footer .right .phone,
+footer .right .mail,
+footer .right .tel {
+    width: 200px;
+    display: flex;
+}
+
+footer .right .loc .io,
+footer .right .phone .io,
+footer .right .mail .io,
+footer .right .tel .io {
+    padding: 3px 12px;
+}
+
+footer .right .loc .n,
+footer .right .phone .n,
+footer .right .mail .n,
+footer .right .tel .n {
+    color: rgb(189, 189, 189);
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.blueText {
+    color: #ff6600 !important;
+}
+
+footer .social-small {
+    width: 50%;
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 1.7rem;
+}
+
+footer .social-small a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+footer .social-small a:hover {
+    color: #ff6600;
+}
+
+footer .social-small .line {
+    width: 250px;
+    height: 1px;
+    background: rgb(134, 134, 134);
+}
+
+/*Footer part----------------------------End------------------------------------ Section */
+
+/*Alert part----------------------------Start------------------------------------Section */
+
+.alert {
+    width: 310px;
+    height: 60px;
+    background: rgb(255, 168, 168);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-left: 5px solid red;
+    border-radius: 10px;
+    z-index: 1000;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0;
+}
+
+.alert p {
+    font-weight: 600;
+    padding: 0 10px;
+    color: rgb(255, 80, 80);
+}
+
+.alert .lni-warning {
+    color: rgb(255, 57, 57);
+}
+
+.alert .lni {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.alert .close {
+    width: 60px;
+    height: 60px;
+    background: rgb(255, 129, 129);
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.alert .close:hover {
+    background: rgb(255, 112, 112);
+}
+
+.hide {
+    transform: translateX(330px);
+    transition: 0.7s;
+}
+
+.show {
+    transform: translateX(0px);
+    transition: 0.7s;
+    opacity: 1;
+}
+
+/*Alert page --------------------------------End---------------------------------------Section */
+
+/*Navigation Part -----------------------------Start---------------------------------- Section */
+
+.navigation {
+    position: fixed;
+    width: 2rem;
+    min-height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    right: 1%;
+    top: 50%;
+    transform: translate(-1%, -50%);
+    overflow: hidden;
+}
+
+.navigation a {
+    width: 8px;
+    height: 8px;
+    background: rgb(25, 25, 25);
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.navigation a:hover {
+    background: #ff6600;
+}
+
+/*Navigation Part --------------------------End----------------------------------- Section */
+
+/*HomePage Part ----------------------------Start--------------------------------- Section */
+
+.mainPage {
+    width: 100%;
+    min-height: auto;
+}
+
+/* FirstPage---------------------------------Start-----------------------------Sub section */
+
+.homepage,
+.materialpage,
+.portfoliopage,
+.contactpage {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainPage .homepage .banner {
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.mainPage .homepage .homebanner {
+    width: 70%;
+    margin-right: 100px;
+}
+
+.mainPage .homepage .shadow {
+    width: 60%;
+    margin-right: 100px;
+    opacity: 0.9;
+    margin-top: -80px;
+}
+
+.mainPage .homepage .content {
+    width: 50%;
+    height: 80vh;
+    padding: 2rem 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.mainPage .homepage .content .title1 {
+    height: auto;
+    width: 90%;
+    margin-bottom: 170px;
+    margin-left: 120px;
+}
+
+.mainPage .homepage .content .title1 .mainTitle {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #272727;
+}
+
+.mainPage .homepage .content .title1 .subTitle {
+    color: #8b8b8b;
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.mainPage .homepage .content .highlight {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+    text-decoration: none;
+}
+
+.mainPage .exploreBtn {
+    width: 120px;
+    height: 45px;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: #ff6600;
+    transition: 0.3s;
+}
+
+.mainPage .exploreBtn a {
+    text-decoration: none;
+    padding: 18px 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.mainPage .exploreBtn:hover {
+    box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.4);
+}
+
+.mainPage .homepage .dev {
+    position: absolute;
+    height: 2rem;
+    bottom: 5.2rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mainPage .homepage .devMedia {
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+.mainPage .homepage .s-icon {
+    position: absolute;
+    bottom: 2rem;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mainPage .homepage .s-icon a {
+    text-decoration: none;
+    color: #272727;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.mainPage .homepage .s-icon a:hover {
+    color: #ff6600;
+}
+
+.mainPage .homepage .s-icon a .sio {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(58, 58, 58);
+    font-size: 0.9rem;
+    opacity: 0;
+}
+.mainPage .homepage .s-icon a:hover .sio {
+    border: 1px solid #ff6600;
+}
+/* .mainPage .homepage .s-icon a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    border-radius: 5px;
+    transform: translateY(40px);
+    z-index: -1;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.mainPage .homepage .s-icon a:nth-child(1):after {
+    background: linear-gradient(45deg, #c40000, #ff8181);
+}
+
+.mainPage .homepage .s-icon a:nth-child(2):after {
+    background: linear-gradient(45deg, #be00c4, #6452ff);
+}
+
+.mainPage .homepage .s-icon a:nth-child(3):after {
+    background: linear-gradient(45deg, #00507e, #277daf);
+}
+
+.mainPage .homepage .s-icon a:hover:after {
+    transform: translateY(0px);
+    opacity: 1;
+} */
+
+/*FirstPage -----------------------------End----------------------------------- Sub section */
+
+/*Secondpage ------------------------------Start--------------------------------- Sub section */
+
+.mainPage .homepage-2,
+.mainPage .homepage-3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainPage .homepage-5 {
+    height: 110vh;
+}
+
+.mainPage .homepage-2 .container .left,
+.mainPage .homepage-2 .container .right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainPage .homepage-2 .container {
+    justify-content: space-evenly;
+}
+
+.mainPage .homepage-3 .container {
+    justify-content: center;
+}
+
+.mainPage .homepage-2 .container .left {
+    align-items: flex-end;
+    padding-bottom: 150px;
+}
+
+.mainPage .homepage-2 .container .right {
+    align-items: flex-start;
+    padding-bottom: 60px;
+}
+
+.mainPage .homepage-2 .container .left .image {
+    width: 430px;
+    height: 270px;
+    background-image: url(/asset/banner1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainPage .homepage-2 .container .left .text {
+    display: flex;
+    width: 220px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainPage .homepage-2 .container .left .text span {
+    color: #8b8b8b;
+}
+
+.mainPage .homepage-2 .container .right .image {
+    width: 300px;
+    height: 200px;
+    background: #000;
+    background-image: url(/asset/banner2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    border-radius: 9px;
+}
+
+.mainPage .homepage-2 .container .right .text {
+    position: relative;
+    width: 300px;
+}
+
+.mainPage .homepage-2 .container .right .text span {
+    font-size: 1.2rem;
+    color: #585858;
+    width: 100px;
+    background: white;
+    font-weight: 300;
+}
+
+.mainPage .homepage-2 .container .right .text .lin {
+    width: 200px;
+    height: 0.7px;
+    background: #000;
+    position: absolute;
+    bottom: 0.7rem;
+    right: -13rem;
+}
+
+.mainPage .homepage-2 .container .right .text button {
+    width: 90px;
+    height: 35px;
+    border: 1px solid #ff6600;
+    border-radius: 4px;
+    background: white;
+    position: absolute;
+    right: -20rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mainPage .homepage-2 .container .right .text button a {
+    color: #272727;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 8px 20px;
+    transition: 0.1s;
+}
+
+.mainPage .homepage-2 .container .right .text button:hover {
+    background: #ff6600;
+}
+
+.mainPage .homepage-2 .container .right .text button:hover a {
+    color: white;
+}
+
+.mainPage .homepage-2 .container .man {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* SecondPage ---------------------------------End-----------------------------------Sub section */
+
+/* ThirdPage ---------------------------------Start-----------------------------------Sub section */
+
+.mainPage .homepage-2 .container,
+.mainPage .homepage-3 .container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.mainPage .homepage-3 .container .left,
+.mainPage .homepage-3 .container .right {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPage .homepage-3 .container .left .bike {
+    width: 50%;
+}
+
+.mainPage .homepage-3 .container .left .bird {
+    position: absolute;
+    top: 17%;
+    right: 30%;
+}
+
+.mainPage .homepage-3 .container .left .line {
+    width: 95%;
+    height: 1px;
+    background: #000;
+    margin-right: 25rem;
+}
+
+.mainPage .homepage-3 .container .right .conte {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.mainPage .homepage-3 .container .right .conte .coloum-x {
+    width: 100%;
+    height: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mainPage .homepage-3 .container .right .conte .b-leaf {
+    width: 30%;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.mainPage .homepage-3 .container .right .conte .b-leaf:hover {
+    background: rgb(219, 219, 219);
+}
+
+.mainPage .homepage-3 .container .right .conte .b-leaf a {
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 15px 18px;
+    color: rgb(46, 46, 46);
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.mainPage .homepage-3 .container .right .conte .b-leaf:hover a {
+    background: rgb(41, 41, 41);
+    color: white;
+}
+
+.mainPage .homepage-3 .container .right .conte .b-leaf:hover i {
+    color: #fdc753;
+}
+
+.mainPage .homepage-3 .container .right .conte .bl1 {
+    top: 11rem;
+    left: 21rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(34, 34, 34);
+    border-right: 1px solid rgb(34, 34, 34);
+}
+
+.mainPage .homepage-3 .container .right .conte .bl2 {
+    top: 15rem;
+    left: 28rem;
+    background: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgb(34, 34, 34);
+    border-right: 1px solid rgb(34, 34, 34);
+}
+
+.mainPage .homepage-3 .container .right .conte .bl3 {
+    top: 22rem;
+    left: 38rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+.mainPage .homepage-3 .container .right .conte .bl4 {
+    top: 16rem;
+    left: 37rem;
+    background: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(34, 34, 34);
+    border-right: 1px solid rgb(34, 34, 34);
+}
+
+.mainPage .homepage-3 .container .right .conte .bl5 {
+    top: 13rem;
+    left: 43rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(34, 34, 34);
+    border-right: 1px solid rgb(34, 34, 34);
+}
+
+.mainPage .homepage-3 .container .right .conte .bl6 {
+    top: 5rem;
+    left: 30rem;
+    background: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+.mainPage .homepage-3 .container .right .conte .bl7 {
+    top: 8rem;
+    left: 37rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+}
+
+.mainPage .homepage-3 .container .right .conte .bl8 {
+    top: 20rem;
+    left: 20rem;
+    background: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid rgb(34, 34, 34);
+    border-right: 1px solid rgb(34, 34, 34);
+}
+
+.mainPage .homepage-3 .container .right .conte .bl9 {
+    top: 22rem;
+    left: 27rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+}
+
+.mainPage .homepage-3 .container .right .conte .text {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: -3rem;
+    right: 2rem;
+}
+
+.mainPage .homepage-3 .container .right .conte .text img {
+    width: 9%;
+    color: #ff6600;
+    animation: upp 1.1s linear infinite;
+    animation-direction: alternate;
+    margin: 0 3px;
+}
+
+@keyframes upp {
+    100% {
+        margin-top: -10px;
+    }
+}
+
+/* ThirdPage ---------------------------------End-----------------------------------Sub section */
+
+/* FourthPage ---------------------------------Start--------------------------------Sub section */
+
+.mainPage .homepage-4 .container {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(#ffffff, #ffedb3 62%);
+    position: relative;
+}
+
+.mainPage .homepage-4 .container .searchBar {
+    width: 20rem;
+    height: 55px;
+    background: rgb(34, 34, 34);
+    border-radius: 10px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainPage .homepage-4 .container .searchBar button {
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: rgb(77, 77, 77);
+    color: white;
+}
+
+.mainPage .homepage-4 .container .searchBar button.activ {
+    background: white;
+    color: rgb(37, 37, 37);
+}
+
+.mainPage .homepage-4 .container .gif {
+    position: absolute;
+    width: 15%;
+    bottom: 0;
+    right: 0;
+}
+
+.mainPage .homepage-4 .container .galary {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.mainPage .homepage-4 .container .galary .item {
+    width: 220px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainPage .homepage-4 .container .galary .item img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainPage .homepage-4 .container .galary .item .image-btn {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 18%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgb(39, 39, 39);
+}
+
+.mainPage .homepage-4 .container .galary .item .image-btn button {
+    color: white;
+    background: none;
+    line-height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mainPage .homepage-4 .container .galary .item .image-btn .lni-heart-filled {
+    color: rgb(100, 100, 100);
+    transition: 0.3s;
+}
+
+.mainPage
+    .homepage-4
+    .container
+    .galary
+    .item
+    .image-btn
+    .lni-heart-filled.liked {
+    color: red;
+    animation: like 0.2s linear 2;
+    animation-direction: alternate;
+}
+
+@keyframes like {
+    100% {
+        font-size: 10px;
+    }
+}
+
+.mainPage .homepage-4 .container .galary .item .image-btn button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* FourthPage ---------------------------------End----------------------------------Sub section */
+
+/* FifthPage ---------------------------------Start---------------------------------Sub section */
+
+.mainPage .homepage-5 .container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.mainPage .homepage-5 {
+    background: linear-gradient(#ffedb3, #ffffff 50%);
+}
+
+.mainPage .homepage-5 .container {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.mainPage .homepage-5 .container .left {
+    width: 280px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+    margin: 0 1.5rem;
+}
+
+.mainPage .homepage-5 .container .left .dTit {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.mainPage .homepage-5 .container .developer {
+    width: 13%;
+    border-radius: 1rem;
+    box-shadow: 3px 7px 11px rgba(0, 0, 0, 0.4);
+}
+
+.mainPage .homepage-5 .container .right {
+    width: 280px;
+    height: 300px;
+    padding-top: 3rem;
+    margin: 0 1.5rem;
+}
+
+.mainPage .homepage-5 .container .right .dName {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.mainPage .homepage-5 .container .left .dSubTit,
+.mainPage .homepage-5 .container .right .dTitle {
+    color: #8b8b8b;
+}
+
+.mainPage .homepage-5 .container .devCont button,
+.mainPage .homepage-5 .container .right .dResume {
+    width: 90px;
+    height: 35px;
+    border: 1px solid transparent;
+    background: #f77d2c;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.mainPage .homepage-5 .container .right .dResume {
+    margin-top: 2rem;
+}
+
+.mainPage .homepage-5 .container .devCont button a,
+.mainPage .homepage-5 .container .right .dResume a {
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 0.71rem;
+}
+
+.mainPage .homepage-5 .container .right .dResume:hover {
+    background: transparent;
+    border: 1px solid #f77d2c;
+}
+
+.mainPage .homepage-5 .container .dSocial {
+    position: absolute;
+    bottom: 11rem;
+}
+
+.mainPage .homepage-5 .container .dSocial .line {
+    width: 5rem;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.mainPage .homepage-5 .container .dSocial a {
+    margin: 0 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.mainPage .homepage-5 .container .dSocial a:hover {
+    color: #ff6600;
+}
+.mainPage .homepage-5 .container .devCont {
+    position: absolute;
+    bottom: 4rem;
+    text-align: center;
+}
+.mainPage .homepage-5 .container .devCont button {
+    background: #d1c9ff;
+    width: 113px;
+    margin-top: 1rem;
+}
+.mainPage .homepage-5 .container .devCont button:hover {
+    background: #a99aff;
+}
+.mainPage .homepage-5 .container .devCont p {
+    color: #6b6b6b;
+}
+.mainPage .homepage-5 .container .devCont p span {
+    color: #ff6600;
+}
+/* FifthPage ---------------------------------End-----------------------------------Sub section */
+
+/* Constant--------------------------------Start--------------------------------------- Section */
+
+.mainPage .homepage-2 .title,
+.mainPage .homepage-3 .title,
+.mainPage .homepage-4 .title,
+.mainPage .homepage-5 .title {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainPage .homepage-2 .title .logo-1,
+.mainPage .homepage-3 .title .logo-1,
+.mainPage .homepage-4 .title .logo-1,
+.mainPage .homepage-5 .title .logo-1 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 82px;
+    text-align: center;
+    line-height: 32px;
+    position: absolute;
+    left: 90px;
+    color: rgb(255, 255, 255);
+    background: rgb(34, 34, 34);
+}
+
+.mainPage .homepage-2 .title .logo-1 p span,
+.mainPage .homepage-3 .title .logo-1 p span,
+.mainPage .homepage-4 .title .logo-1 p span,
+.mainPage .homepage-5 .title .logo-1 p span {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.mainPage .homepage-2 .title h1,
+.mainPage .homepage-3 .title h1,
+.mainPage .homepage-4 .title h1,
+.mainPage .homepage-5 .title h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(24, 24, 24);
+}
+
+.mainPage .homepage-2 .title span,
+.mainPage .homepage-3 .title span,
+.mainPage .homepage-4 .title span,
+.mainPage .homepage-5 .title span {
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    width: 400px;
+    text-align: center;
+    color: #727272;
+}
+
+.set {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie {
+    width: 25rem;
+    height: 10rem;
+    background: #ffdecf;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.cookie .cook {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cookie img {
+    width: 30%;
+}
+
+.cookie .cook p {
+    font-size: 0.8rem;
+}
+
+.cookie button {
+    width: 90px;
+    height: 37px;
+    border-radius: 8px;
+    background: #9c5636;
+    border: none;
+    cursor: pointer;
+}
+
+.cookie a {
+    text-decoration: none;
+    color: white;
+}
+
+.disappear {
+    transform: translateY(200px);
+    opacity: 0;
+}
+/* Constant------------------------------------End--------------------------------- Section */
+
+/* Homepage------------------------------------End--------------------------------- Section */
+
+#head,
+#body {
+    opacity: 0;
+}

@@ -1,0 +1,84 @@
+.container-cont {
+    width: 70%;
+    height: 50vh;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30vh;
+    margin-bottom: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getintouch {
+    position: absolute;
+    top: 0;
+    left: 13%;
+    width: 15rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.4rem;
+    flex-direction: column;
+    text-align: left;
+}
+.getintouch .g {
+    width: 10rem;
+    font-size: 1.7rem;
+}
+.getintouch .t {
+    font-size: 3rem;
+    color: #7d930e;
+}
+.cont-img {
+    width: 280px;
+    height: 40vh;
+}
+.container-cont img {
+    width: 100%;
+    height: 100%;
+}
+.divCont {
+    width: 350px;
+    height: 40vh;
+    background: #daf06a;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.half-circle {
+    width: 40vh;
+    height: 40vh;
+    background: #daf06a;
+    position: absolute;
+    right: -48%;
+    border-radius: 50%;
+    z-index: -1;
+}
+.sec-cont {
+    width: 19rem;
+    height: 3.3rem;
+    background: rgb(23, 23, 23);
+    margin-top: 15px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sec-cont p {
+    width: 16.7rem;
+    color: #daf06a;
+    text-align: center;
+}
+.sec-cont i {
+    color: #daf06a;
+    width: 3.3rem;
+    height: 3.3rem;
+    background: rgb(45, 45, 45);
+    line-height: 3.3rem;
+}

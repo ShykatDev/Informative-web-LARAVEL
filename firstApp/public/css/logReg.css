@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Six+Caps&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+/* login------------------------------------Start-----------------------------------Section */
+
+.main-log .banner-log,
+.main-log .banner-reg {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-log .banner-log .image {
+    width: 50%;
+    height: 70%;
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-log .banner-log .form,
+.main-log .banner-reg .form {
+    width: 50%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-log .banner-log .form {
+    align-items: flex-end;
+    text-align: right;
+}
+.main-log .banner-reg .form {
+    text-align: left;
+}
+
+.main-log .banner-log .form h1,
+.main-log .banner-reg .form h1 {
+    color: #252525;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.main-log .banner-log .form p,
+.main-log .banner-reg .form p {
+    color: #8b8b8b;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 5rem;
+}
+
+.main-log .banner-log .form p span,
+.main-log .banner-reg .form p span {
+    color: #f77d2c;
+}
+
+.main-log .banner-log .form .inp,
+.main-log .banner-reg .form .inp {
+    width: 340px;
+    height: 40px;
+    margin: 14px 0;
+    border-radius: 10px;
+    border: 1px solid #8b8b8b;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.main-log .banner-log .form .inp small,
+.main-log .banner-reg .form .inp small {
+    color: red;
+}
+
+.main-log .banner-log .form .inp:focus,
+.main-log .banner-reg .form .inp:focus {
+    border: 1px solid #f77d2c;
+}
+
+.main-log .banner-log .form button,
+.main-log .banner-reg .form button {
+    width: 90px;
+    height: 40px;
+    background: #252525;
+    color: #f77d2c;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.main-log .banner-log .form .newAcc,
+.main-log .banner-reg .form .newAcc {
+    margin: 1rem 0;
+    color: black;
+}
+
+.main-log .banner-log .form .newAcc a,
+.main-log .banner-reg .form .newAcc a {
+    color: #f77d2c;
+    text-decoration: none;
+}
+
+/* Login--------------------------------End--------------------------------------- Section */

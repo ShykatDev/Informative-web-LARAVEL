@@ -1,0 +1,74 @@
+@media (max-width: 980px) {
+  .main {
+    width: 620px;
+    height: 100vh;
+  }
+  .nav-bar {
+    position: fixed;
+    font-size: 10px;
+    height: 5vh;
+    width: 100%;
+  }
+  .nav-bar .menu ul .lm a {
+    margin-right: 0;
+  }
+  .nav-bar .logo a img {
+    display: none;
+  }
+  .nav-bar .menu {
+    margin-left: 180px;
+  }
+  .main .banner h3 {
+    margin-left: 120px;
+    margin-top: 25px;
+  }
+  .main .banner p {
+    margin-left: -12px;
+  }
+  .second-sec {
+    width: 620px;
+  }
+  #testimonial {
+    width: 620px;
+  }
+  #testimonial .slide .box-one .box h1 {
+    font-size: 25px;
+  }
+  #testimonial .slide .box-one .box {
+    height: 340px;
+    margin: 0 10px;
+  }
+  #testimonial .slide .box-two .box {
+    height: 340px;
+    margin: 0 10px;
+  }
+  .last-banner {
+    width: 620px;
+  }
+  .last-banner .triangle1 {
+    display: none;
+  }
+  .last-banner .triangle2 {
+    display: none;
+  }
+  .last-banner .texts h2 {
+    font-size: 15px;
+    margin-top: -20px;
+    text-align: left;
+    width: 90%;
+  }
+  .last-banner .texts p {
+    font-size: 10px;
+    text-align: left;
+    left: 23%;
+  }
+  .copyright {
+    width: 620px;
+  }
+  .copyright p {
+    font-size: 10px;
+  }
+  #testimonial .heading .io {
+    left: 43%;
+  }
+}

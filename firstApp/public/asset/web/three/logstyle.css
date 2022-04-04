@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.main .nav-bar {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 8px 11px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.main .nav-bar .logo a img {
+  width: 25%;
+}
+
+.main .nav-bar .menu {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .nav-bar .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 250px;
+  margin-top: 10px;
+}
+.main .nav-bar .menu ul li {
+  list-style: none;
+}
+.main .nav-bar .menu ul li a {
+  padding: 10px 20px;
+  color: #14213d;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.main .nav-bar .menu ul .lm a {
+  color: black;
+  margin-right: 70px;
+}
+.main .nav-bar .menu ul .ml a:hover {
+  border-bottom: 1px solid;
+  transition: 0.3s;
+}
+.main .nav-bar .menu ul .sep {
+  border: 1px solid black;
+  margin: 0 20px;
+  padding: 7px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.main .nav-bar .menu ul .log:hover {
+  background: #fca311;
+}
+.main .nav-bar .menu ul .log {
+  box-shadow: 3px 6px 11px rgba(0, 0, 0, 0.2);
+}
+.main .nav-bar .menu ul .reg {
+  background: #fca311;
+  box-shadow: 3px 6px 11px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+}
+.main .banner {
+  width: 100%;
+  height: 85vh;
+  margin-top: 15vh;
+  position: relative;
+}
+.main .banner .image {
+  width: 600px;
+  height: 800px;
+  background: url(/svgs/login.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 11.5px;
+}
+.main .banner .form {
+  width: 800px;
+  height: 100%;
+  position: relative;
+}
+.main .banner .form h1 {
+  color: #14213d;
+  font-size: 45px;
+  letter-spacing: 3px;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+.main .banner .form p {
+  color: grey;
+  font-size: 15px;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 20%;
+  top: 22%;
+}
+.main .banner .form p span {
+  color: #fca311;
+}
+.main .banner .form .inpp {
+  position: absolute;
+  top: 38%;
+  left: 20%;
+}
+.main .banner .form .inp {
+  width: 300px;
+  height: 40px;
+  margin: 14px 0;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  outline: none;
+}
+.main .banner .form .ckbx {
+  position: absolute;
+  top: 64%;
+  left: 20%;
+}
+.main .banner .form label {
+  position: absolute;
+  left: 24%;
+  top: 64.3%;
+  font-weight: 600;
+}
+.main .banner .form button {
+  width: 90px;
+  height: 40px;
+  background: #14213d;
+  color: #fca311;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 72%;
+  left: 20%;
+  cursor: pointer;
+  font-size: 17px;
+}
+.main .banner .form h4 {
+  position: absolute;
+  left: 20%;
+  top: 80%;
+}
+.main .banner .form h5 {
+  position: absolute;
+  left: 20%;
+  top: 85%;
+}
+.main .banner .form h5 a {
+  color: #fca311;
+  text-decoration: none;
+}
+
+/*--------------------------------------------End of LoginPage-------------------------------------*/
+
+.last-banner {
+  width: 100%;
+  height: 35vh;
+  background: #12203c;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.last-banner .triangle1 {
+  position: absolute;
+  background: black;
+  clip-path: polygon(100% 0%, 75% 35%, 100% 35%);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  opacity: 0.5;
+}
+.last-banner .triangle2 {
+  position: absolute;
+  background: #fca311;
+  clip-path: polygon(100% 15%, 75% 35%, 100% 35%);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+}
+.last-banner .triangle3 {
+  position: absolute;
+  background: black;
+  clip-path: polygon(25% 0%, 0% 0%, 0% 35%);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  opacity: 0.5;
+}
+.last-banner .triangle4 {
+  position: absolute;
+  background: #fca311;
+  clip-path: polygon(25% 0%, 0% 0%, 0% 20%);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+}
+.last-banner .texts h2 {
+  color: white;
+  z-index: 15;
+  font-size: 25px;
+  position: absolute;
+  font-weight: bold;
+  top: 34%;
+  left: 22%;
+}
+.last-banner .texts p {
+  color: white;
+  position: absolute;
+  top: 55%;
+  font-size: 12px;
+  left: 35%;
+}
+.copyright {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.copyright p {
+  margin: 0;
+  color: rgb(112, 112, 112);
+}

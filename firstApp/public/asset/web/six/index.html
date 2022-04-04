@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game 🎮</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <p class="target">Make <span>20</span> point to win 🎯</p>
+    <p class="subtit">
+      If u get ( . ) then your point will reset. So hold your point carefully
+    </p>
+    <div class="main">
+      <div class="all">
+        <div class="left side-0">
+          <h1 class="player_0" id="current-1">
+            Player 1 <span class="io-0">🙋‍♂️</span>
+          </h1>
+          <p class="total" id="total_0">0</p>
+          <div class="lc current">
+            <p class="crnt">Current</p>
+            <p class="score" id="score_0">0</p>
+          </div>
+        </div>
+        <div class="middle">
+          <p class="btn new">🆕 New Game</p>
+          <img src="dice-2.png" class="dice hidden" />
+          <p class="btn roll">🎲 Roll Dice</p>
+          <p class="btn hold">🕹 Hold</p>
+        </div>
+        <div class="active right side-1">
+          <h1 class="player_1" id="current-2">
+            Player 2 <span class="io-1">🙋‍♂️</span>
+          </h1>
+          <p class="total" id="total_1">0</p>
+          <div class="rc current">
+            <p class="crnt">Current</p>
+            <p class="score" id="score_1">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="shykat">MADE BY <span>SHYKAT</span></p>
+    <script src="app.js"></script>
+  </body>
+</html>

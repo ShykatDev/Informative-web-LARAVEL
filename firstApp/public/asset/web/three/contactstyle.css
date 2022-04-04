@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.nav-bar {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 8px 11px rgba(0, 0, 0, 0.3);
+}
+.nav-bar .logo a img {
+  width: 25%;
+}
+
+.nav-bar .menu {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 250px;
+  margin-top: 10px;
+}
+.nav-bar .menu ul li {
+  list-style: none;
+}
+.nav-bar .menu ul li a {
+  padding: 10px 20px;
+  color: #14213d;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-bar .menu ul .lm a {
+  color: black;
+  margin-right: 70px;
+}
+.nav-bar .menu ul .ml a:hover {
+  border-bottom: 1px solid;
+  transition: 0.3s;
+}
+.nav-bar .menu ul .sep {
+  border: 1px solid black;
+  margin: 0 20px;
+  padding: 5px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.nav-bar .menu ul .log:hover {
+  background: #fca311;
+}
+.nav-bar .menu ul .log {
+  box-shadow: 3px 6px 11px rgba(0, 0, 0, 0.2);
+}
+.nav-bar .menu ul .reg {
+  background: #fca311;
+  box-shadow: 3px 6px 11px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+}
+
+.main .nav-bar {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 8px 11px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.nav-item {
+  color: #14213d;
+}
+.nav-item:hover {
+  color: #fca311;
+}
+.main .banner {
+  width: 100%;
+  margin-top: 15vh;
+  position: relative;
+}
+.main .banner .image {
+  width: 700px;
+  height: 500px;
+  background: url(UNDRAW/contact.svg);
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 100px;
+  opacity: 0.2;
+  z-index: -1;
+}
+#thankPage {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+}
+#thankPage .ty {
+  font-size: 150px;
+  font-weight: bold;
+  color: transparent;
+  position: relative;
+  font-family: sans-serif;
+  transform: rotate(0deg);
+  -webkit-text-stroke: 1px black;
+  overflow: hidden;
+  margin: 0;
+}
+.ty::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #14213d;
+  width: 0;
+  transition: 0.5s ease-out;
+  -webkit-text-stroke: 1px #14213d;
+  animation: fil 5s linear infinite;
+  font-weight: bold;
+  overflow: hidden;
+}
+@keyframes fil {
+  100% {
+    width: 100%;
+  }
+}
+#thankPage .icons h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fca311;
+  text-align: center;
+}
+#thankPage .icons .io {
+  width: 250px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+#thankPage .icons .io i {
+  padding: 13px;
+  border: 1px solid #14213d;
+  color: #14213d;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#thankPage .icons .io i:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 4px 11px rgba(0, 0, 0.3);
+}
